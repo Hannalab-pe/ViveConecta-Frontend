@@ -1,1 +1,14 @@
 @import "tailwindcss";
+
+:root {
+  /* Paleta de Colores */
+  --primary: #1a535c;
+  --secondary: #4ecdc4;
+  --white: #f7fff7;
+  --red: #ff6b6b;
+  --yellow: #ffe66d;
+}
+
+body {
+  font-family: "Popins", sans-serif;
+}

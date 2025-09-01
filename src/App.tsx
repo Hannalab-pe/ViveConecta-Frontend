@@ -1,8 +1,16 @@
+import { RouterProvider } from "react-router-dom";
+import { router } from "./router/routes";
+import { Toaster } from "sonner";
+import { AuthProvider } from "./context/auth-context";
+
 const App = () => {
   return (
-    <div>
-      <h1 className="text-3xl font-bold">Hola Mundo</h1>
-    </div>
+    <AuthProvider>
+      <div>
+        <Toaster position="top-right" duration={3000} expand={true} />
+        <RouterProvider router={router} />
+      </div>
+    </AuthProvider>
   );
 };
 
